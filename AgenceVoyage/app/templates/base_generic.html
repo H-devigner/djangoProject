@@ -1,0 +1,32 @@
+<!-- templates/base_generic.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+    <!-- Add any CSS or other head elements here -->
+</head>
+<body>
+    <header>
+        <!-- Add a navigation bar or other common header elements here -->
+        <nav>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Add a footer or other common footer elements here -->
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+</body>
+</html>
